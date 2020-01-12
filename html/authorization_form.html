@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/favicon.ico">
+
+    <title>申请报表和数据产品访问权限</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/form-validation.css" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>申请报表和数据产品访问权限</h2>
+        <p class="lead">请在提交线上申请后，联系金融创新部大数据中心完成线下会签流程，然后管理员会开通您的访问权限；自申请日开始两周内未完成线下会签流程的申请会自动撤销</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 order-md-1">
+          <h4 class="mb-3">申请权限的报表和数据产品名称：客户画像分析系统</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">姓名</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  请正确填写姓名。
+                </div>
+              </div>
+               <div class="col-md-6 mb-3">
+                <label for="State">所在总行部门/分支行</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">请选择...</option>
+                  <option>总行领导</option>
+                  <option>金融创新部</option>
+                  <option>计划财务部</option>
+                  <option>个人业务部</option>
+                  <option>直销银行部</option>
+                  <option>信用卡中心</option>
+                  <option>公司业务部</option>
+                  <option>两江分行</option>
+                  <option>渝北分行</option>
+              </select>
+                <div class="invalid-feedback">
+                  请选择所在部门或分支行。
+                </div>
+              </div>               
+            </div>
+
+            <div class="mb-3">
+              <label for="phone">联系电话号码</label>
+              <input type="phone" class="form-control" id="email">
+              <div class="invalid-feedback">
+                请录入正确的电话号码。
+              </div>
+            </div>
+              
+            <div class="mb-3">
+              <label for="email">公司OA电子邮件地址</label>
+              <input type="email" class="form-control" id="email" placeholder="you@cqrcb.com">
+              <div class="invalid-feedback">
+                请录入正确的电子邮件地址。
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="reason">申请理由</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+               
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">提交报表权限申请</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2018-2019 重庆农村商业银行金融创新部大数据中心</p>
+      </footer>
+    </div>
+
+    <script src="../js/jquery-slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+      
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
