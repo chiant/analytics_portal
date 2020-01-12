@@ -7,9 +7,9 @@
     <meta name="author" content="">
     <link rel="icon" href="../img/favicon.ico">
 
-    <title>申请报表和数据产品访问权限</title>
+    <title>Product Access Application</title>
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../common/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/form-validation.css" rel="stylesheet">
 
   </head>
@@ -18,77 +18,77 @@
 
     <div class="container">
       <div class="py-5 text-center">
-        <h2>申请报表和数据产品访问权限</h2>
-        <p class="lead">请在提交线上申请后，联系金融创新部大数据中心完成线下会签流程，然后管理员会开通您的访问权限；自申请日开始两周内未完成线下会签流程的申请会自动撤销</p>
+        <h2>Application for Analytics Product Access</h2>
+        <p class="lead">Your Access will only be granted after the product owner approves your applications. <br>You will receive an Email notification about your application result.</p>
       </div>
 
       <div class="row">
         <div class="col-md-12 order-md-1">
-          <h4 class="mb-3">申请权限的报表和数据产品名称：客户画像分析系统</h4>
+          <h4 class="mb-3">Analytics Product Name：Campaign Sizing Tool</h4>
           <form class="needs-validation" novalidate>
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label for="firstName">姓名</label>
+                <label for="firstName">Name</label>
                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                 <div class="invalid-feedback">
-                  请正确填写姓名。
+                  Please input your name correctly。
                 </div>
               </div>
                <div class="col-md-6 mb-3">
-                <label for="State">所在总行部门/分支行</label>
+                <label for="State">Department/Tribe</label>
                 <select class="custom-select d-block w-100" id="state" required>
-                  <option value="">请选择...</option>
-                  <option>总行领导</option>
-                  <option>金融创新部</option>
-                  <option>计划财务部</option>
-                  <option>个人业务部</option>
-                  <option>直销银行部</option>
-                  <option>信用卡中心</option>
-                  <option>公司业务部</option>
-                  <option>两江分行</option>
-                  <option>渝北分行</option>
+                  <option value="">Please select:</option>
+                  <option>CCB Tribe</option>
+                  <option>Customer Tribe</option>
+                  <option>Digital Tribe</option>
+                  <option>Lending &amp; Payment Tribe</option>
+                  <option>Insurance Tribe</option>
+                  <option>RTD Tribe</option>
+                  <option>Wealth Tribe</option>
+                  <option>GAC Senior Management</option>
               </select>
                 <div class="invalid-feedback">
-                  请选择所在部门或分支行。
+                  Please select your department or team。
                 </div>
               </div>               
             </div>
 
             <div class="mb-3">
-              <label for="phone">联系电话号码</label>
+              <label for="phone">Telephone</label>
               <input type="phone" class="form-control" id="email">
               <div class="invalid-feedback">
-                请录入正确的电话号码。
+                Please input correct telephone number。
               </div>
             </div>
               
             <div class="mb-3">
-              <label for="email">公司OA电子邮件地址</label>
-              <input type="email" class="form-control" id="email" placeholder="you@cqrcb.com">
+              <label for="email">HSBC Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@hsbc.com">
               <div class="invalid-feedback">
-                请录入正确的电子邮件地址。
+                Please input correct email address。
               </div>
             </div>
 
             <div class="mb-3">
-              <label for="reason">申请理由</label>
+              <label for="reason">Business justification</label>
               <textarea class="form-control" rows="5"></textarea>
             </div>
                
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="submit">提交报表权限申请</button>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit the Application</button>
           </form>
         </div>
       </div>
 
       <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; 2018-2019 重庆农村商业银行金融创新部大数据中心</p>
+        <p class="mb-1">&copy; 2019-2020 HSBC Global Analytics Center</p>
       </footer>
     </div>
 
-    <script src="../js/jquery-slim.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    
+    <script src="../common/js/jquery.min.js"></script>
+    <script src="../common/js/popper.min.js"></script>  
+    <script src="../common/js/bootstrap.min.js"></script>     
       
     <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
